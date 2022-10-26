@@ -61,3 +61,5 @@ let quality = 2;
 let price =  970;
 let coca = `we bought 2 crates of soda at Kshs. ${quality * price} in total`;
 console.log(coca);
+
+
