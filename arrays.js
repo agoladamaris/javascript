@@ -7,7 +7,7 @@ console.log(color);
 // an array of numbers 
 let lottoNums = [19,22,56,12.51];
 console.log(lottoNums);
-// a aixed array 
+// a mixed array 
 let stuff = [true, 68, 'cat', null];
 stuff[3] = 'milk';
 stuff.push ('busia');
