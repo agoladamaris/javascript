@@ -10,6 +10,10 @@ for (let i = 20; i >= 0; i--){
 for (let i = 50; i <= 100; i+=10){
     console.log(i);
 }
+// or for numbers from 0-9
+for(let f=0; f<10; f++){
+    console.log(f);
+}
 
 const animal = ['lions', 'tigers', 'bears'];
 for (let i = 0; i <animal.length; i++){
@@ -58,11 +62,14 @@ console.log(`CORRECT! Guessed: ${guess} & target was: ${targetNum}`);
 // while (true{
 
 // })
-// For...OF  
+// For...OF (variables in loop)
+for (let s of 'yell'){
+    console.log(s);
+}  
 let subreddits = ['soccer', 'popheads', 'cringe', 'books'];
 for (let sub of subreddits){
     // do this for every item in subreddits arrays 
-    console.log('${soccer} - www.reddit.com/r/${soccer}');
+    console.log(`${sub} - www.reddit.com/r/${sub}`);
 }
 
 // nested for of 
@@ -85,3 +92,46 @@ for (let row of magicSquare){
     console.log(`row of ${row} sum to ${sum}`);
 }
 
+// OBJECTS IN LOOPS 
+const moviereviews ={
+    amadeus: 10,
+    Arrival: 9.5,
+    Alien: 9,
+    Amelie: 8
+};
+for (let movies of Object.keys(moviereviews)){
+    console.log(movies);
+    let score = moviereviews[movies];
+    console.log(`i rated ${movies} ${score}/10`);
+};
+const footballTeams ={
+    manU: 6,
+    liverpool: 9,
+    tortenham: 7,
+    lestarcity:3,
+    FCleopard: 8
+
+};
+for (let football of Object.keys(footballTeams)){
+    // console.log(football);
+    let score = footballTeams[football];
+    console.log( ` ${football} is position ${score} in the champions legue`);
+};
+
+// FOR...IN(variable in objects )
+// Loop over the key in objects 
+const jeopardywinnings = {
+    regularPlay : 2522700,
+    watsonChallange : 3000000,
+    tournameofchampions : 500000,
+    battleOfTheDecades : 100000
+};
+let total = 0;
+for (let key in jeopardywinnings){ //to assess keys only
+    total += jeopardywinnings[key]; // to assess values of every key
+    
+}
+// console.log(`ken jennings Total winnings :$${total}`);
+console.log(total);
+
+// 
