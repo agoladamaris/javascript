@@ -87,3 +87,38 @@ console.log(colors);
 // concuatenated 
 let concatenated = colors[2].concat(colors[4]).reverse();
 console.log(concatenated.join('-').toUpperCase());
+
+function avg(arr){
+    let sum = 0;
+    for(let r of arr){
+        sum += r;
+        console.log(sum);
+    }
+    const average = sum / arr.lenght ;
+    console.log(average);
+};
+avg([1,2,3,4,5]);
+
+// FIND LARGEST 
+function findlargest(x,y){
+    if (x>y)
+     console.log(`${x}is larger`);
+    else if (x<y) 
+    console.log(`${y}is larger`);
+    else {
+console.log(`${x} and ${y} are equal`);
+    }
+        
+    };
+    findlargest (4,8);
+
+
+    // return statements ends function 
+    function add(x ,y){
+        return x + y; //return only 1 value
+        // console.log('Hello world'); 
+        //return [x, y]returns multiple values
+    }
+    add (2,3);
+    
+

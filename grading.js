@@ -25,3 +25,4 @@ function grading(grade){
     grading(30);
     grading(60);
     grading(88);
+    
