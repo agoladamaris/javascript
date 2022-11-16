@@ -54,3 +54,41 @@ function square(x){
     console.log(x*x); 
 }
 square(10 );
+
+
+//REASONS WHY WE STORE FUNCTIONS IN VARIABLES
+// 1. Functions Are Objects :
+//>We can store alot of them in an array.
+//>we can put them in a variable
+//>we can even pass them around as an argument 
+// use console.dir in the browser to prove that function are objects.
+
+//hoisting
+function add(x,y){
+    return x+ y;
+    
+};
+
+function multiply(x, y){
+    return x* y;
+};
+function divide(x, y){
+    return x/ y;
+};
+function subtract(x, y){
+    return x- y;
+};
+const studnt = {
+science: add
+};
+console.log(studnt.science(40,45));
+const divided ={
+    math: divide
+};
+console.log(divided.math(30,4));
+
+const arry2=[add,subtract,multiply,divide];
+for (let calc of arry2){
+    let array3=calc(40,6)
+console.log(array3);
+};

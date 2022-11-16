@@ -155,7 +155,7 @@ if (radius > 0){
 };
 console.log(radius);
 
-// FUNCTION OUTER 
+// FUNCTION OUTER ,(global function)
 function outer(){ //available across all the functions
     let movie = 'accident man';
     console.log(movie);
@@ -172,7 +172,8 @@ inner();
 }
 outer();
 
-// EXPRESSIONS 
+// FUNCTION EXPRESSIONS 
+//
 const sqquare = function (num) {
     return num * num;
 }
